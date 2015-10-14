@@ -16,6 +16,16 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{beamer}
+
+%----------------------------------------------------------------------------------------
+%	IMPORTACIONES
+%----------------------------------------------------------------------------------------
+
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
 %paquete usado para silabación en español
 \usepackage[spanish]{babel}
 %codificación del documento
@@ -220,6 +230,64 @@ Ránking para instituciones educacionales en Chile, que utiliza ciertos criterio
 
 %------------------------------------------------
 
+\begin{frame}
+\frametitle{Análisis de las Herramientas}
+\begin{table}
+\begin{tabular}{l l l}
+\toprule
+\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+\midrule
+Treatment 1 & \cmark & 0.562 \\
+Treatment 2 & 0.0015681 & \xmark \\
+Treatment 3 & 0.0009271 & 0.296 \\
+Treatment 1 & 0.0003262 & 0.562 \\
+Treatment 2 & 0.0015681 & 0.910 \\
+Treatment 3 & 0.0009271 & 0.296 \\
+Treatment 1 & 0.0003262 & 0.562 \\
+Treatment 2 & 0.0015681 & 0.910 \\
+Treatment 3 & 0.0009271 & 0.296 \\
+Treatment 1 & 0.0003262 & 0.562 \\
+Treatment 2 & 0.0015681 & 0.910 \\
+Treatment 3 & 0.0009271 & 0.296 \\
+\bottomrule
+\end{tabular}
+\caption{Table caption}
+\end{table}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Proyecto}
+
+\subsection{Preámbulo}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Criterios de Calidad}
+\begin{itemize}
+\item Mantenibilidad
+\item Flexibilidad
+\item Testeabilidad
+\item Portabilidad
+\item Integridad
+\item Rapidez
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Patrones de Diseño}
+\begin{itemize}
+\item MVC
+\item SOA
+\item POA
+\item DAO
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
 \section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
 
