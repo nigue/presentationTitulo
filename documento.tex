@@ -233,22 +233,22 @@ Ránking para instituciones educacionales en Chile, que utiliza ciertos criterio
 \begin{frame}
 \frametitle{Análisis de las Herramientas}
 \begin{table}
-\begin{tabular}{l l l}
+\begin{tabular}{l l l l l}
 \toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+				& \textbf{php} & \textbf{.net} & \textbf{Rails} & \textbf{Java}\\
 \midrule
-Treatment 1 & \cmark & 0.562 \\
-Treatment 2 & 0.0015681 & \xmark \\
-Treatment 3 & 0.0009271 & 0.296 \\
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
+Sencillez 		& \textcolor{green}{\cmark} & \textcolor{red}{\xmark}   & \textcolor{red}{\xmark}   &\textcolor{green}{\cmark}\\
+Robustez 		& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & \textcolor{green}{\cmark} &\textcolor{green}{\cmark}\\
+Seguridad 		& \textcolor{red}{\xmark}   & \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} &\textcolor{green}{\cmark}\\
+Portabilidad 	& \textcolor{green}{\cmark} & \textcolor{red}{\xmark}   & \textcolor{red}{\xmark}   &\textcolor{green}{\cmark}\\
+Neutralidad 	& \textcolor{green}{\cmark} & \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} &\textcolor{green}{\cmark}\\
+Interfaz 		& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & \textcolor{green}{\cmark} &\textcolor{green}{\cmark}\\
+Expresividad 	& \textcolor{green}{\cmark} & \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} &\textcolor{red}{\xmark}\\
+Compilación 	& \textcolor{green}{\cmark} & \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} &\textcolor{red}{\xmark}\\
+Aprendizaje 	& \textcolor{green}{\cmark} & \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} &\textcolor{green}{\cmark}\\
+E. de control 	& \textcolor{green}{\cmark} & \textcolor{green}{\cmark} & \textcolor{green}{\cmark} &\textcolor{green}{\cmark}\\
+Abstracción 	& \textcolor{green}{\cmark} & \textcolor{red}{\xmark}   & \textcolor{red}{\xmark}   &\textcolor{green}{\cmark}\\
+\textbf{Total}  & 8 & 3 & 8 & 9\\
 \bottomrule
 \end{tabular}
 \caption{Table caption}
@@ -266,12 +266,12 @@ Treatment 3 & 0.0009271 & 0.296 \\
 \begin{frame}
 \frametitle{Criterios de Calidad}
 \begin{itemize}
-\item Mantenibilidad
-\item Flexibilidad
-\item Testeabilidad
-\item Portabilidad
-\item Integridad
-\item Rapidez
+\item \textbf{Mantenibilidad}: Modelo de programación simple para corregir.
+\item \textbf{Flexibilidad}: Capacidad de crecimiento del código.
+\item \textbf{Testeabilidad}: Test de funcionamiento.
+\item \textbf{Portabilidad}: Portabilidad sobre muchos S.O. en distintas arquitecturas
+\item \textbf{Integridad}: Integridad de la data que es ingresada.
+\item \textbf{Rapidez}: Ejecución de servicios de forma veloz y clara.
 \end{itemize}
 \end{frame}
 
@@ -280,11 +280,183 @@ Treatment 3 & 0.0009271 & 0.296 \\
 \begin{frame}
 \frametitle{Patrones de Diseño}
 \begin{itemize}
-\item MVC
-\item SOA
-\item POA
-\item DAO
+\item \textbf{MVC}: Modelo Vista Controlador
+\item \textbf{SOA}: Arquitectura orientada a servicios
+\item \textbf{POA}: Programación Orientada al Aspecto
+\item \textbf{DAO}: Objeto de Acceso a datos
 \end{itemize}
+\end{frame}
+
+\subsection{Desarrollo}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Integrador}
+\begin{itemize}
+\item \textbf{Poblador}: Herramienta desarrollada con el fin de buscar los datos desde DirDoc de manera segura y controlada.
+\item \textbf{Periodicidad}: Característica del poblador que establece fechas, horas y minutos en donde varios servicios consultan datos.
+\item \textbf{Web Service}: Framework que permite la comunicación entre 2 sistemas mediante un lenguaje de marcado expuesto por el que envia y el receptor.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Operaciones}
+\begin{itemize}
+\item \textbf{Tarea Diaria}: Actualizar Cohortes y Estudiantes.
+\item \textbf{Tarea Semanal}: Actualizar Asignaturas Cursadas.
+\item \textbf{Tarea Mensual}: Actualizar Cursos, Docentes y Cargos.
+\item \textbf{Tarea Trimestral}: Actualizar Asignaturas, Cupos Carreras y Titulados.
+\item \textbf{Tarea Semestral}: Actualizar Establecimientos.
+\item \textbf{Tarea Anual}: Actualizar Carreras, Planes de Estudio y Quintalización
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Tabla Comparativa (Integrador)}
+\begin{table}
+\begin{tabular}{l l l l}
+\toprule
+\textbf{SEPA} & \textbf{Hoy} & \textbf{2.0} & Característica\\
+\midrule
+Instalación 	& \textcolor{green}{\cmark} & \textcolor{green}{\cmark} & Servidor de aplicaciones  \\
+Uso		 		& \textcolor{green}{\cmark} & \textcolor{green}{\cmark} & Uso automático \\
+Monitoreo 		& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Genera alertas debido a fallos \\
+Portabilidad 	& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Se puede reinstalar \\
+Estabilidad 	& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Presenta pocos o nulos fallos \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Mantenedor}
+\begin{itemize}
+\item Sitio Web
+\item Perfiles
+\item Ingreso
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Mantenedores}
+\begin{itemize}
+\item Inicio
+\item Acceso
+\item Geografía
+\item Utem
+\item Curso
+\item Estudiante
+\item Contacto
+\item Sesión
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Tabla Comparativa (Mantenedor)}
+\begin{table}
+\begin{tabular}{l l l l}
+\toprule
+\textbf{SEPA} & \textbf{Hoy} & \textbf{2.0} & Característica\\
+\midrule
+Instalación 	& \textcolor{green}{\cmark} & \textcolor{green}{\cmark} & Servidor de aplicaciones  \\
+Uso		 		& \textcolor{green}{\cmark} & \textcolor{green}{\cmark} & Uso automático \\
+Monitoreo 		& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Genera alertas debido a fallos \\
+Portabilidad 	& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Se puede reinstalar \\
+Estabilidad 	& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Presenta pocos o nulos fallos \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Resultados} 
+
+\subsection{Evaluación}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Estimación de Costos}
+\begin{block}{COCOMO}
+ASDF
+\end{block}
+\begin{block}{Punto Función}
+asdf
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Conteo de puntos}
+\begin{itemize}
+\item tabla puntos
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Características Generales del Sistema}
+\begin{itemize}
+\item tabla y Calculo de puntos de Funcion ajustados
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Valor Final}
+\begin{itemize}
+\item calculo final
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\subsection{Conclusión}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Garantías de calidad}
+\begin{itemize}
+\item Postgre SQL
+\item MyBatis - Spring Data
+\item Web Service CXF
+\item Primefaces JSF
+\item MVC
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Conclusión Final}
+Sed iaculis dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed tellus ipsum. Donec vestibulum ligula non lorem vulputate fermentum accumsan neque mollis.\\~\\
+
+Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Trabajo Futuro}
+Sed iaculis dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed tellus ipsum. Donec vestibulum ligula non lorem vulputate fermentum accumsan neque mollis.\\~\\
+
+Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
 \end{frame}
 
 %------------------------------------------------
