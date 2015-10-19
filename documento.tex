@@ -130,7 +130,7 @@ UNIVERSIDAD TECNOLÓGICA METROPOLITANA \\ % Your institution for the title page
 \begin{frame}
 \frametitle{SEPA Anterior}
 \begin{itemize}
-\item Datos probenientes de DirDoc, proceso de traspaso inseguro.
+\item Datos provenientes de DirDoc, proceso de traspaso inseguro.
 \item Carece de formas alternativas de acceso.
 \item Falta de roles para los usuarios.
 \item No es posible reparar datos incompletos.
@@ -224,7 +224,7 @@ Actualizar SEPA a una versión 2.0, creando un sistema actualizado e independien
 Evaluación mediante ránkings enfocados a entregar información a organismos y personas relacionadas con post-grados, MBA, estudios de ingeniería y negocios.
 \end{block}
 \begin{block}{Ránking de Calidad de las Universidades Chilenas}
-Ránking para instituciones educacionales en Chile, que utiliza ciertos criterios, como son la cantidad de investigaciones o la masa de estudiantes que entran en cada Universidad.
+Ránking para instituciones educacionales en Chile, que utiliza ciertos criterios, como son la cantidad de investigaciones o la masa de estudiantes que entran en cada Universidad \cite{p1}.
 \end{block}
 \end{frame}
 
@@ -356,7 +356,7 @@ Estabilidad 	& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Presenta 
 \item \textbf{Curso}: Asignatura, Asignatura Cursada, Curso, Estado de Asignatura y Régimen.
 \item \textbf{Estudiante}: Establecimiento, Grupo Dependencia, Rama, Régimen Educacional, Tipo Establecimiento, Cohorte, Egresado, Estado Alumno, Estudiante, Histórico Alumno, Tipo de Ingreso y Titulado.
 \item \textbf{Contacto}: Contacto y Preguntas Frecuentes.
-\item \textbf{Sesión}: Que tiene el Logout para poder salir del sistema cerrando sesión.
+\item \textbf{Sesión}: Logout para poder salir del sistema cerrando sesión.
 \end{itemize}
 \end{frame}
 
@@ -402,26 +402,78 @@ Evaluación del impacto de cada componente realizada. Esta enfocado a los distin
 \begin{frame}
 \frametitle{Conteo de puntos}
 \begin{itemize}
-\item tabla puntos
+\item \textbf{Ficheros Internos Lógicos}: Cantidad de información de los datos internos, contenida en bases de datos y ficheros de configuración.
+\item \textbf{Ficheros Externos de Interfaz}: Datos externos que son administrados por la aplicación DirDoc.
+\item \textbf{Entrada Externa}: Servicios web provenientes de otros sistemas.
+\item \textbf{Salida Externa}: Muestra la totalidad de los datos internos en su parte visual.
+\item \textbf{Consulta Externa}: Mantenedores de todos sus datos en base de datos, para poder ser modificables por los usuarios.
 \end{itemize}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Características Generales del Sistema}
+\frametitle{Tabla de valores ponderados}
+\begin{table}
+\begin{tabular}{l c l c c}
+\toprule
+\textbf{Carac.} & \textbf{Pond.} & \textbf{Valor} & \textbf{Deter.} & \textbf{Total}\\
+\midrule
+FIL & 49 & medio & 8 & 8x4 \\
+FEI	& 43 & medio & 3 &  3x5\\
+EE 	& 16 & alto  & 6 &  6x10\\
+SE 	& 43 & alto  & 8 &  8x25\\
+CE	& 43 & alto  & 8 &  8x15\\
+\textbf{Total} &&&   &  427\\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Características Generales del Sistema (puntos)}
+\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{.45\textwidth} % Left column and width
 \begin{itemize}
-\item tabla y Calculo de puntos de Funcion ajustados
+\item Datos Comunicados [4]
+\item Proceso Distribuido [4]
+\item Rendimiento [4]
+\item Explotación [1]
+\item Transacciones [2]
+\item Entradas ON-LINE [5]
+\item Eficiencia [3]
 \end{itemize}
+
+\column{.5\textwidth} % Right column and width
+\begin{itemize}
+\item Actualizaciones ON-LINE [4]
+\item Lógica Interna Compleja [5]
+\item Reusabilidad del Código [5]
+\item Conversión e Instalación [0]
+\item Facilidad de Operación [5]
+\item Instalaciones Múltiples [3]
+\item Facilidad de Cambios [3]
+\end{itemize}
+
+\end{columns}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
 \frametitle{Valor Final}
-\begin{itemize}
-\item calculo final
-\end{itemize}
+\begin{theorem}[Calculo Puntos de Función Ajustados]
+$PFA = PFSA x (0,65 + (0,01 x FCT) = 427 x (0,65 + (0,01 x 48) = 452,51$
+\end{theorem}
+\begin{theorem}[Calculo Horas Hombre]
+$452,51PF x 4(HH/PF) = 452,51 x (4)HH = 1810,04HH$
+\end{theorem}
+\begin{theorem}[Valor Final]
+$1810,04HH x 0,9(UF/HH) = 1629UF = 40,931,435Pesos$
+\end{theorem}
 \end{frame}
 
 %------------------------------------------------
@@ -433,11 +485,11 @@ Evaluación del impacto de cada componente realizada. Esta enfocado a los distin
 \begin{frame}
 \frametitle{Garantías de calidad}
 \begin{itemize}
-\item Postgre SQL
-\item MyBatis - Spring Data
-\item Web Service CXF
-\item Primefaces JSF
-\item MVC
+\item \textbf{Postgre SQL}: Sistema gestor de bases de datos altamente estable \cite{p2}.
+\item \textbf{Spring Data}: Framework JPA para el control de los datos desde múltiples fuentes \cite{p3}.
+\item \textbf{Web Service CXF}: Sistema de comunicación entre 2 servicios mediante un protocolo común \cite{p4}.
+\item \textbf{Primefaces JSF}: Motor para generar interfaces de usuario avanzadas y simples \cite{p5}.
+\item \textbf{MVC}: Modelo de desarrollo computacional para el manejo de grandes proyectos.
 \end{itemize}
 \end{frame}
 
@@ -445,144 +497,21 @@ Evaluación del impacto de cada componente realizada. Esta enfocado a los distin
 
 \begin{frame}
 \frametitle{Conclusión Final}
-Sed iaculis dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed tellus ipsum. Donec vestibulum ligula non lorem vulputate fermentum accumsan neque mollis.\\~\\
-
-Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
+\begin{block}{}
+Importante oportunidad de mejoras, tales como: mantenibilidad de la data, aunque esta contenga errores, ya que es posible editar aspectos mínimos dentro de todas las tablas, conectividad con servicios web, manejado por parámetros SOAP.
+\end{block}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
 \frametitle{Trabajo Futuro}
-Sed iaculis dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed tellus ipsum. Donec vestibulum ligula non lorem vulputate fermentum accumsan neque mollis.\\~\\
-
-Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
-\end{frame}
-
-%------------------------------------------------
-\section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
-%------------------------------------------------
-
-\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
-
-\begin{frame}
-\frametitle{Paragraphs of Text}
-Sed iaculis dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed tellus ipsum. Donec vestibulum ligula non lorem vulputate fermentum accumsan neque mollis.\\~\\
-
-Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Bullet Points}
-\begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-\end{itemize}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Blocks of Highlighted Text}
-\begin{block}{Block 1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+\begin{block}{}
+Motor de minería de datos que revele información que hasta ahora no se ha obtenido dentro de los marcos de este proyecto, por ejemplo, una herramienta que obtenga formulaciones o métodos de aproximación para datos del futuro.
 \end{block}
-
-\begin{block}{Block 2}
-Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
+\begin{block}{}
+Inteligencia de Negocio que junto con la idea anterior sea capaz de producir nuevos indicadores enfocados a la mejora o a la conducción, con intervención humana, de los valores generalizados en las tablas que maneja SEPA.
 \end{block}
-
-\begin{block}{Block 3}
-Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
-\end{block}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
-
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-\end{columns}
-\end{frame}
-
-%------------------------------------------------
-\section{Second Section}
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
-\end{example}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Citation}
-An example of the \verb|\cite| command to cite within the presentation:\\~
-
-This statement requires citation \cite{p1}.
 \end{frame}
 
 %------------------------------------------------
@@ -591,9 +520,31 @@ This statement requires citation \cite{p1}.
 \frametitle{References}
 \footnotesize{
 \begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
+\bibitem[America Economia, 2010]{p1} America Economia Ránking (2010)
+\newblock El Ránking de Calidad de las Universidades Chilenas
+\end{thebibliography}
+
+\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[Douglas, 2003]{p2} Susan Douglas Korry Douglas (2003)
+\newblock PostgreSQL
+\newblock \emph{Sams Publishing}.
+\end{thebibliography}
+
+\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[Hemrajani, 2006]{p3} Anil Hemrajani (2006)
+\newblock Agile Java Development with Spring, Hibernate and Eclipse.
+\newblock \emph{Sams Publishing}.
+\end{thebibliography}
+
+\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[Kalin, 2013]{p4} Martin Kalin (2013)
+\newblock Java Web Services
+\newblock \emph{Reilly Media}.
+\end{thebibliography}
+
+\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[Varaksin, 2006]{p5} Oleg Varaksin (2006)
+\newblock Beginning JSP, JSF and Tomcat
 \end{thebibliography}
 }
 \end{frame}
@@ -601,7 +552,7 @@ This statement requires citation \cite{p1}.
 %------------------------------------------------
 
 \begin{frame}
-\Huge{\centerline{The End}}
+\Huge{\centerline{Demo SEPA 2.0}}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
