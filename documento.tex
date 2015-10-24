@@ -128,12 +128,38 @@ UNIVERSIDAD TECNOLÓGICA METROPOLITANA \\ % Your institution for the title page
 \subsection{Resumen}
 
 \begin{frame}
-\frametitle{SEPA Anterior}
+\frametitle{Que es SEPA}
 \begin{itemize}
-\item Datos provenientes de DirDoc, proceso de traspaso inseguro.
-\item Carece de formas alternativas de acceso.
-\item Falta de roles para los usuarios.
-\item No es posible reparar datos incompletos.
+\item Información de DirDoc.
+\item Información procesada.
+\item Herramienta que entrega indicadores.
+\item Realizado como trabajo de titulo.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{SEPA - Trabajo no Cubierto}
+\begin{itemize}
+\item Ingreso de data inseguro y lento.
+\item Datos no precisos.
+\item No existe un mantenedor.
+\item Distinción entre usuario y administrativo.
+\item Registro de entrada.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Propuesta de valor}
+\begin{itemize}
+\item Ingreso por dimensiones.
+\item Integrador.
+\item Visualizar tablas completas.
+\item Reparar datos.
+\item Programación genérica.
 \end{itemize}
 \end{frame}
 
@@ -150,25 +176,26 @@ UNIVERSIDAD TECNOLÓGICA METROPOLITANA \\ % Your institution for the title page
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Beneficios}
+\frametitle{Beneficios - Integrador}
 \begin{itemize}
-\item Información que otorga una mejor perspectiva de la realidad universitaria.
-\item Mirar el desempeño académico de un estudiante.
-\item Integrar componentes o funcionalidades a SEPA 2.0.
-\item Extracción de data en forma segura y automática.
+\item Integrar datos.
+\item Perfección de datos.
+\item Ingresos Segmentados.
+\item Resistente a fallos.
+\item Facilidad de extender.
 \end{itemize}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Situación final}
+\frametitle{Beneficios - Mantenedor}
 \begin{itemize}
-\item Ingreso por perfiles.
-\item Visualización de todas las tablas que componen la base de datos.
-\item Mantenedor de perfiles.
-\item Web Service integrador.
-\item Expansibilidad.
+\item Perspectiva de la realidad Universitaria.
+\item Mirar el avance cuantitativo de data.
+\item Ingreso por dimensiones.
+\item Interfaz moderna y simple.
+\item Facilidad de extender en usuarios.
 \end{itemize}
 \end{frame}
 
@@ -179,24 +206,40 @@ UNIVERSIDAD TECNOLÓGICA METROPOLITANA \\ % Your institution for the title page
 \begin{frame}
 \frametitle{Objetivos}
 \begin{block}{General}
-Actualizar SEPA a una versión 2.0, creando un sistema actualizado e independiente de información estadística para la Universidad Tecnológica Metropolitana ayudando a sus procesos docentes y productivos, disponiendo de información veraz a la realidad universitaria.
+Fortalecer las debilidades del proyecto anterior.
 \end{block}
 
-
 \begin{itemize}
-\item Sistema simple de mejorar.
-\item Desarrollado bajo herramientas robustas.
-\item Creación de un SEPA 2.0 diferente de su predecesor.
+\item Producto eficiente.
+\item Información y gestión de control de datos.
+\item Mejor visualización de indicadores.
+\item Decisiones.
+\item Aprender Java.
 \end{itemize}
 \end{frame}
 
 %------------------------------------------------
 
+
 \begin{frame}
-\frametitle{Diagrama del proyecto}
+\frametitle{Stack Tecnológico - Integrador - SOA}
 \begin{figure}[!hbp]
 \begin{center}
-\includegraphics[scale=0.2,angle=0]{images/diagrama2.jpg}
+\includegraphics[scale=0.3,angle=0]{images/sepa_soa.png}
+\caption{Diagrama general del sistema}
+\label{Diagrama general del sistema}
+\end{center}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+
+\begin{frame}
+\frametitle{Stack Tecnológico - Mantenedor - MVC}
+\begin{figure}[!hbp]
+\begin{center}
+\includegraphics[scale=0.25,angle=0]{images/sepa_mvc.png}
 \caption{Diagrama general del sistema}
 \label{Diagrama general del sistema}
 \end{center}
@@ -206,26 +249,57 @@ Actualizar SEPA a una versión 2.0, creando un sistema actualizado e independien
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Ciclo de Vida}
+\frametitle{Personal Software Process}
+\begin{block}{PSP}
+Modelo de trabajo basado en la caracterización de los tiempos y costes de operación.
+\end{block}
+
+\begin{itemize}
+\item Una forma de trabajo.
+\item Desarrollo de tablas.
+\item Ordenamiento del trabajo.
+\item Gestión del tiempo.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Herramientas o Aplicaciones Similares}
+\begin{block}{QS Top Universities}
+Ránkings de organismos y personas relacionadas con post-grados, MBA, estudios de ingeniería y negocios.
+\end{block}
+\begin{block}{Ránking de Calidad de las Universidades Chilenas}
+Utiliza ciertos criterios, como son la cantidad de investigaciones o la masa de estudiantes en cada Universidad \cite{p1}.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+
+
+\begin{frame}
+\frametitle{Ventajas comparativas de Java}
 \begin{figure}[!hbp]
 \begin{center}
-\includegraphics[scale=0.6,angle=0]{images/cicloMini.PNG}
-\caption{Ciclo de vida}
-\label{Organigrama de rectoria}
+\includegraphics[scale=0.33,angle=0]{images/ranking_tiobe.PNG}
+\caption{www.tiobe.com/index.php/content/paperinfo/tpci/index.html}
+\label{Diagrama general del sistema}
 \end{center}
 \end{figure}
 \end{frame}
 
 %------------------------------------------------
 
+
 \begin{frame}
-\frametitle{Estado del Arte}
-\begin{block}{QS Top Universities}
-Evaluación mediante ránkings enfocados a entregar información a organismos y personas relacionadas con post-grados, MBA, estudios de ingeniería y negocios.
-\end{block}
-\begin{block}{Ránking de Calidad de las Universidades Chilenas}
-Ránking para instituciones educacionales en Chile, que utiliza ciertos criterios, como son la cantidad de investigaciones o la masa de estudiantes que entran en cada Universidad \cite{p1}.
-\end{block}
+\frametitle{Ventajas comparativas de Java}
+\begin{figure}[!hbp]
+\begin{center}
+\includegraphics[scale=0.3,angle=0]{images/ranking_spectrum.jpg}
+\caption{spectrum.ieee.org/computing/software/the-2015-top-ten-programming-languages}
+\label{Diagrama general del sistema}
+\end{center}
+\end{figure}
 \end{frame}
 
 %------------------------------------------------
@@ -281,6 +355,8 @@ Abstracción 	& \textcolor{green}{\cmark} & \textcolor{red}{\xmark}   & \textcol
 \frametitle{Patrones de Diseño}
 \begin{itemize}
 \item \textbf{MVC}: Modelo Vista Controlador
+\item \textbf{IOC}: Inversión de Control
+\item \textbf{IOD}: Inyección de Dependencias
 \item \textbf{SOA}: Arquitectura orientada a servicios
 \item \textbf{POA}: Programación Orientada al Aspecto
 \item \textbf{DAO}: Objeto de Acceso a datos
@@ -308,9 +384,9 @@ Abstracción 	& \textcolor{green}{\cmark} & \textcolor{red}{\xmark}   & \textcol
 \item \textbf{Tarea Diaria}: Actualizar Cohortes y Estudiantes.
 \item \textbf{Tarea Semanal}: Actualizar Asignaturas Cursadas.
 \item \textbf{Tarea Mensual}: Actualizar Cursos, Docentes y Cargos.
-\item \textbf{Tarea Trimestral}: Actualizar Asignaturas, Cupos Carreras y Titulados.
+\item \textbf{Tarea Trimestral}: Actualizar Asignaturas.
 \item \textbf{Tarea Semestral}: Actualizar Establecimientos.
-\item \textbf{Tarea Anual}: Actualizar Carreras, Planes de Estudio y Quintalización
+\item \textbf{Tarea Anual}: Actualizar Carreras y Planes de Estudio.
 \end{itemize}
 \end{frame}
 
@@ -323,9 +399,9 @@ Abstracción 	& \textcolor{green}{\cmark} & \textcolor{red}{\xmark}   & \textcol
 \toprule
 \textbf{SEPA} & \textbf{Hoy} & \textbf{2.0} & Característica\\
 \midrule
-Instalación 	& \textcolor{green}{\cmark} & \textcolor{green}{\cmark} & Servidor de aplicaciones  \\
+Instalación 	& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Servidor de aplicaciones  \\
 Uso		 		& \textcolor{green}{\cmark} & \textcolor{green}{\cmark} & Uso automático \\
-Monitoreo 		& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Genera alertas debido a fallos \\
+Monitoreo 		& \textcolor{green}{\cmark} & \textcolor{green}{\cmark} & Genera alertas debido a fallos \\
 Portabilidad 	& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Se puede reinstalar \\
 Estabilidad 	& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Presenta pocos o nulos fallos \\
 \bottomrule
@@ -347,31 +423,15 @@ Estabilidad 	& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Presenta 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Mantenedores (Modelo)}
-\begin{itemize}
-\item \textbf{Inicio}: Mensaje de bienvenida y punto de partida.
-\item \textbf{Acceso}: Acceso, Auditoría, Rol y Usuario.
-\item \textbf{Geografía}: País, Región, Provincia y Comuna.
-\item \textbf{Utem}: Facultad, Departamento, Escuela, Contrato, Docente, Jerarquía, Jornada, Carrera, Asignatura Malla, Cupo Carrera, Malla, Plan de Estudio y Requisito de Asignatura.
-\item \textbf{Curso}: Asignatura, Asignatura Cursada, Curso, Estado de Asignatura y Régimen.
-\item \textbf{Estudiante}: Establecimiento, Grupo Dependencia, Rama, Régimen Educacional, Tipo Establecimiento, Cohorte, Egresado, Estado Alumno, Estudiante, Histórico Alumno, Tipo de Ingreso y Titulado.
-\item \textbf{Contacto}: Contacto y Preguntas Frecuentes.
-\item \textbf{Sesión}: Logout para poder salir del sistema cerrando sesión.
-\end{itemize}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
 \frametitle{Tabla Comparativa (Mantenedor)}
 \begin{table}
 \begin{tabular}{l l l l}
 \toprule
 \textbf{SEPA} & \textbf{Hoy} & \textbf{2.0} & Característica\\
 \midrule
-Instalación 	& \textcolor{green}{\cmark} & \textcolor{green}{\cmark} & Servidor de aplicaciones  \\
-Uso		 		& \textcolor{green}{\cmark} & \textcolor{green}{\cmark} & Uso intuitivo \\
-Monitoreo 		& \textcolor{green}{\cmark} & \textcolor{green}{\cmark} & Genera alertas debido a fallos \\
+Instalación 	& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Servidor de aplicaciones  \\
+Uso		 		& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Uso intuitivo \\
+Monitoreo 		& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Genera alertas debido a fallos \\
 Portabilidad 	& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Se puede reinstalar \\
 Estabilidad 	& \textcolor{red}{\xmark}   & \textcolor{green}{\cmark} & Presenta pocos o nulos fallos \\
 \bottomrule
@@ -483,23 +543,39 @@ $1810,04HH x 0,9(UF/HH) = 1629UF = 40,931,435Pesos$
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Garantías de calidad}
+\frametitle{Herramientas Utilizadas}
 \begin{itemize}
 \item \textbf{Postgre SQL}: Sistema gestor de bases de datos altamente estable \cite{p2}.
+\item \textbf{Hibernate}: Motor de abstracción de consultas SQL.
 \item \textbf{Spring Data}: Framework JPA para el control de los datos desde múltiples fuentes \cite{p3}.
-\item \textbf{Web Service CXF}: Sistema de comunicación entre 2 servicios mediante un protocolo común \cite{p4}.
-\item \textbf{Primefaces JSF}: Motor para generar interfaces de usuario avanzadas y simples \cite{p5}.
-\item \textbf{MVC}: Modelo de desarrollo computacional para el manejo de grandes proyectos.
+\item \textbf{CXF}: Sistema de comunicación entre 2 servicios mediante un protocolo común \cite{p4}.
+\item \textbf{Primefaces}: Motor para generar interfaces de usuario avanzadas y simples \cite{p5}.
 \end{itemize}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Conclusión Final}
+\frametitle{Características Notables}
+\begin{itemize}
+\item Facilidad de extender el Trabajo.
+\item Proyectos escalables.
+\item Ajustar data.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Conclusiones}
 \begin{block}{}
-Importante oportunidad de mejoras, tales como: mantenibilidad de la data, aunque esta contenga errores, ya que es posible editar aspectos mínimos dentro de todas las tablas, conectividad con servicios web, manejado por parámetros SOAP.
+Oportunidad de aprender la estructura de un proyecto grande.
 \end{block}
+\begin{itemize}
+\item Entregar una dimension de gestión.
+\item Actualizar de forma desatendida.
+\item Recarga desde el punto donde quedó.
+\end{itemize}
 \end{frame}
 
 %------------------------------------------------
@@ -507,10 +583,10 @@ Importante oportunidad de mejoras, tales como: mantenibilidad de la data, aunque
 \begin{frame}
 \frametitle{Trabajo Futuro}
 \begin{block}{}
-Motor de minería de datos que revele información que hasta ahora no se ha obtenido dentro de los marcos de este proyecto, por ejemplo, una herramienta que obtenga formulaciones o métodos de aproximación para datos del futuro.
+Motor de minería que obtenga formulaciones o métodos de aproximación para datos del futuro.
 \end{block}
 \begin{block}{}
-Inteligencia de Negocio que junto con la idea anterior sea capaz de producir nuevos indicadores enfocados a la mejora o a la conducción, con intervención humana, de los valores generalizados en las tablas que maneja SEPA.
+Inteligencia de negocio - modelo de predicción, para tomar ramos o distribuir la carga académica.
 \end{block}
 \end{frame}
 
@@ -553,6 +629,12 @@ Inteligencia de Negocio que junto con la idea anterior sea capaz de producir nue
 
 \begin{frame}
 \Huge{\centerline{Demo SEPA 2.0}}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{¿Consultas?}}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
